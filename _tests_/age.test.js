@@ -30,4 +30,7 @@ describe("Age", () => {
     let age2 = new Age(20, "sedentary");
     expect(age2.lifeExpectancy()).toEqual(64);
   })
+  test('should return years left', () => {
+    expect(age.lifeLeft()).toEqual(64);
+  })
 })

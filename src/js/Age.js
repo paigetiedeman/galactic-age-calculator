@@ -28,4 +28,7 @@ lifeExpectancy(){
     return this.lifeExpect -= 20;
   }
 }
+lifeLeft(){
+  
+}
 };
