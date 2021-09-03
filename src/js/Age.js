@@ -24,6 +24,8 @@ lifeExpectancy(){
     return this.lifeExpect;
   } else if (this.lifestyle === "average"){
     return this.lifeExpect -= 10;
+  } else {
+    return this.lifeExpect -= 20;
   }
 }
 };
