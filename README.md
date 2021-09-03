@@ -1,4 +1,4 @@
-# Galactic Age Caloculator
+# Galactic Age Calculator
 
 #### This is a calculator where the user can input their age to receive their age on other planets.
 

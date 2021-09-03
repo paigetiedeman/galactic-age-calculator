@@ -1,11 +1,15 @@
 {
-  "name": "Galactic-Age-Calculator",
+  "name": "galactic-age-calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/paigetiedeman/galactic-age-calculator.git"
+  },
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build & webpack-dev-server --open --mode development",
+    "start": "npm run build && webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
