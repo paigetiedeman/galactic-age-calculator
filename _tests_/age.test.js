@@ -23,4 +23,8 @@ describe("Age", () => {
     age = new Age (30)
     expect(age.lifeExpectancy("healthy")).toEqual(10);
   })
+  test('should return life expectancy for mercury based on lifestyle', () => {
+    age.galacticAge("Mercury")
+    expect(lifeExpectancy("healthy")).toEqual(63)
+  })
 })

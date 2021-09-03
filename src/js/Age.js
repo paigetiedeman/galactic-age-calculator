@@ -17,6 +17,8 @@ galacticAge(planet){
 lifeExpectancy(lifestyle){
   if (lifestyle === "healthy"){
     return this.inputAge -= 20;
+  } else {
+    return 
   }
 }
 };
