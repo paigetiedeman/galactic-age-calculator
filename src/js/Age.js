@@ -1,9 +1,11 @@
 export default class Age {
-  constructor(UserAge) {
-  this.UserAge = UserAge;
+  constructor(inputAge) {
+  this.inputAge = inputAge;
 }
-galacticAge(){
-  
+galacticAge(planet){
+  if (planet === "Mercury") {
+    return Math.round(this.inputAge / .24)
+  } 
 }
 
 };

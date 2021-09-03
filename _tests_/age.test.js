@@ -6,7 +6,8 @@ describe("Age", () => {
   beforeEach(() => {
     age = new Age(20);
   })
+
   test('should return galacticAge of user on Mercury', () => {
-    expect(age.galacticAge).toEqual(83)
+    expect(age.galacticAge("Mercury")).toEqual(83)
   }) 
 })
