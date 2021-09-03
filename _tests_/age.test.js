@@ -4,7 +4,7 @@ describe("Age", () => {
   let age;
 
   beforeEach(() => {
-    age = new Age(20);
+    age = new Age(20, "healthy");
   })
 
   test('should return galacticAge of user on Mercury', () => {
@@ -19,12 +19,8 @@ describe("Age", () => {
   test('should return galacticAge of user on Jupiter', () => {
     expect(age.jupiterAge()).toEqual(2);
   })
-  test('should return life expectancy based on lifestyle', () => {
-    age = new Age (30)
-    expect(age.lifeExpectancy("healthy")).toEqual(10);
+  test('should return life expectancy based on lifestyle of "healthy"', () => {
+    expect(age.lifeExpectancy()).toEqual(84);
   })
-  test('should return life expectancy for mercury based on lifestyle', () => {
-    age.galacticAge("Mercury")
-    expect(lifeExpectancy("healthy")).toEqual(63)
-  })
+
 })

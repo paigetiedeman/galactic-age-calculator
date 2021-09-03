@@ -1,6 +1,7 @@
 export default class Age {
-  constructor(inputAge) {
+  constructor(inputAge, lifestyle) {
   this.inputAge = inputAge;
+  this.lifestyle = lifestyle;
 }
 mercuryAge(){
   return this.mercuryYears = Math.round(this.inputAge / .24); 
@@ -17,11 +18,10 @@ jupiterAge(){
   return this.jupiterYears = Math.round(this.inputAge / 11.86);
 }
 
-lifeExpectancy(lifestyle){
-  if (lifestyle === "healthy"){
-    return this.inputAge -= 20;
-  } else {
-    return 
+lifeExpectancy(){
+  this.lifeExpect = 84;
+  if (this.lifestyle === "healthy"){
+    return this.lifeExpect;
   }
 }
 };
