@@ -5,7 +5,9 @@ export default class Age {
 galacticAge(planet){
   if (planet === "Mercury") {
     return Math.round(this.inputAge / .24)
-  } 
+  } else if (planet === "Venus"){
+    return Math.round(this.inputAge / .62)
+  }
 }
 
 };
