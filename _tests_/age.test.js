@@ -6,7 +6,9 @@ describe("Age", () => {
   beforeEach(() => {
     age = new Age(20, "healthy");
   })
-
+  test("should return age on Earth", () => {
+    expect(age.earthAge()).toEqual(20);
+  })
   test('should return galacticAge of user on Mercury', () => {
     expect(age.mercuryAge()).toEqual(83);
   }) 
@@ -30,7 +32,7 @@ describe("Age", () => {
     let age2 = new Age(20, "sedentary");
     expect(age2.lifeExpectancy()).toEqual(64);
   })
-  test('should return years left', () => {
-    expect(age.lifeLeft()).toEqual(64);
+  test('should return years left on earth', () => {
+    expect(age.earthLifeLeft()).toEqual(64);
   })
 })

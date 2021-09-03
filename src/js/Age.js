@@ -2,7 +2,13 @@ export default class Age {
   constructor(inputAge, lifestyle) {
   this.inputAge = inputAge;
   this.lifestyle = lifestyle;
+  this.yearsLeft = 0;
+  this.lifeExpect = 84;
 }
+earthAge() {
+  return this.earthYears = this.inputAge;
+}
+
 mercuryAge(){
   return this.mercuryYears = Math.round(this.inputAge / .24); 
 }
@@ -19,16 +25,19 @@ jupiterAge(){
 }
 
 lifeExpectancy(){
-  this.lifeExpect = 84;
   if (this.lifestyle === "healthy"){
-    return this.lifeExpect;
+    this.lifeExpect;
   } else if (this.lifestyle === "average"){
-    return this.lifeExpect -= 10;
+    this.lifeExpect -= 10;
   } else {
-    return this.lifeExpect -= 20;
+    this.lifeExpect -= 20;
   }
+  return this.lifeExpect;
 }
-lifeLeft(){
-  
+
+earthLifeLeft(){
+  if (this.lifeExpect - this.earthYears > 0){
+    return this.lifeExpect - this.earthYears;
+  }
 }
 };
