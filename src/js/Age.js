@@ -1,9 +1,8 @@
 export default class Age {
-  constructor(inputAge, lifestyle) {
+  constructor(inputAge, lifeExpect) {
   this.inputAge = inputAge;
-  this.lifestyle = lifestyle;
-  this.yearsLeft = 0;
-  this.lifeExpect = 84;
+  // this.lifestyle = lifestyle;
+  this.lifeExpect = lifeExpect;
 }
 earthAge() {
   return this.earthYears = this.inputAge;
@@ -24,20 +23,20 @@ jupiterAge(){
   return this.jupiterYears = Math.round(this.inputAge / 11.86);
 }
 
-lifeExpectancy(){
-  if (this.lifestyle === "healthy"){
-    this.lifeExpect;
-  } else if (this.lifestyle === "average"){
-    this.lifeExpect -= 10;
-  } else {
-    this.lifeExpect -= 20;
-  }
-  return this.lifeExpect;
-}
+// WIP: having difficulty connecting before time is up
+// lifeExpectancy(){
+//   if (this.lifestyle === "healthy"){
+//     this.lifeExpect;
+//   } else if (this.lifestyle === "average"){
+//     this.lifeExpect -= 10;
+//   } else {
+//     this.lifeExpect -= 20;
+//   }
+//   return this.lifeExpect;
+// }
 
 earthLifeLeft(){
-  if (this.lifeExpect - this.earthYears > 0){
-    return this.lifeExpect - this.earthYears;
+  this.lifeExpect = this.lifeExpect - this.inputAge;
+    return this.lifeExpect;
   }
-}
 };
