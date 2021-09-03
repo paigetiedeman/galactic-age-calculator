@@ -1,7 +1,10 @@
 export default class Age {
-  constructor(inputAge) {
+  constructor(inputAge, lifestyle) {
   this.inputAge = inputAge;
+  // this.lifeExpect = lifeExpect;
+  this.lifestyle = lifestyle;
 }
+
 galacticAge(planet){
   if (planet === "Mercury") {
     return Math.round(this.inputAge / .24)
@@ -13,5 +16,7 @@ galacticAge(planet){
     return Math.round(this.inputAge / 11.86)
   }
 }
+lifeExpectancy(){
 
+}
 };
