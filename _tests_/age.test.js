@@ -22,5 +22,8 @@ describe("Age", () => {
   test('should return life expectancy based on lifestyle of "healthy"', () => {
     expect(age.lifeExpectancy()).toEqual(84);
   })
-
+  test ('should return life expectancy based on lifestyle of "average"', () => {
+    let age2 = new Age(20, "average");
+    expect(age2.lifeExpectancy()).toEqual(74);
+  })
 })
