@@ -39,4 +39,7 @@ earthLifeLeft(){
   this.lifeExpect = this.lifeExpect - this.inputAge;
     return this.lifeExpect;
   }
+mercuryLifeLeft(){
+  
+}
 };

@@ -22,7 +22,7 @@
 
 ## Description
 
-This site has user inputs that allow the user to see what their age would be on Mercury, Venus, Mars and Jupiter. This calculator also estimates life expectancy based on a factor tbd..
+This site has user inputs that allow the user to see what their age would be on Mercury, Venus, Mars and Jupiter. This calculator also estimates life expectancy based on the users inputted expected life expectancy.
 
 ## Setup/Installation Requirements
 
