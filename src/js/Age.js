@@ -52,6 +52,7 @@ marsLifeLeft(){
   return this.lifeExpect;
 }
 jupiterLifeLeft(){
-  
+  this.lifeExpect = Math.round(this.lifeExpect*11.86 - this.inputAge);
+  return this.lifeExpect;
 }
 };
