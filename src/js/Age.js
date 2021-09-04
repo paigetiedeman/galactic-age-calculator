@@ -48,6 +48,7 @@ venusLifeLeft(){
   return this.lifeExpect;
 }
 marsLifeLeft(){
-  
+  this.lifeExpect = Math.round(this.lifeExpect*1.88 - this.inputAge);
+  return this.lifeExpect;
 }
 };
