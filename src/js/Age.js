@@ -16,7 +16,7 @@ venusAge(){
 }
 
 marsAge(){
-  return this.marsYears = Math.round(this.inputAge /1.88);
+  return this.marsYears = Math.round(this.inputAge / 1.88);
 }
 
 jupiterAge(){
@@ -40,11 +40,14 @@ earthLifeLeft(){
     return this.lifeExpect;
   }
 mercuryLifeLeft(){
-  this.lifeExpect = this.lifeExpect*.24 -this.inputAge;
+  this.lifeExpect = Math.round(this.lifeExpect*.24 -this.inputAge);
   return this.lifeExpect;
 }
 venusLifeLeft(){
-  this.lifeExpect = this.lifeExpect*.62 - this.inputAge;
+  this.lifeExpect = Math.round(this.lifeExpect*.62 - this.inputAge);
   return this.lifeExpect;
+}
+marsLifeLeft(){
+  
 }
 };

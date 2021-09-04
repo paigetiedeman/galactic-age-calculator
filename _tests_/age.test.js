@@ -39,6 +39,9 @@ describe("Age", () => {
     expect(age.mercuryLifeLeft()).toBeLessThan(1);
   })
   test('should return years left on Venus', () => {
-    expect(age.venusLifeLeft()).toBeLessThan(33);
+    expect(age.venusLifeLeft()).toBe(32);
+  })
+  test('should return years left on Mars', () => {
+    expect(age.marsLifeLeft()).toBe(138);
   })
 })
