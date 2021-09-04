@@ -44,6 +44,7 @@ mercuryLifeLeft(){
   return this.lifeExpect;
 }
 venusLifeLeft(){
-  
+  this.lifeExpect = this.lifeExpect*.62 - this.inputAge;
+  return this.lifeExpect;
 }
 };
