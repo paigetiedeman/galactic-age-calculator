@@ -58,4 +58,7 @@ describe("Age", () => {
   test('should return years past life expectancy for Venus', () => {
     expect(age2.venusLifeLeft()).toEqual(48);
   })
+  test('should return years past life expectancy for Mars', () => {
+    expect(age2.marsLifeLeft()).toEqual(58);
+  })
 })
