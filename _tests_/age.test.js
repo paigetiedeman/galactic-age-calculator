@@ -51,4 +51,8 @@ describe("Age", () => {
     let age2 = new Age(100, 84);
     expect(age2.earthLifeLeft()).toEqual(16);
   })
+  test('should return years past life expectancy for Mercury', () => {
+    let age2 = new Age (100, 84);
+    expect(age2.mercuryLifeLeft()).toEqual(80);
+  })
 })
