@@ -36,8 +36,11 @@ jupiterAge(){
 // }
 
 earthLifeLeft(){
-  this.lifeExpect = this.lifeExpect - this.inputAge;
-    return this.lifeExpect;
+  this.yearsLeft = this.lifeExpect - this.inputAge;
+  if (this.yearsLeft < 0) {
+    return Math.round(this.inputAge - this.lifeExpect);
+  }
+    return this.yearsLeft;
   }
 mercuryLifeLeft(){
   this.lifeExpect = Math.round(this.lifeExpect*.24 -this.inputAge);
