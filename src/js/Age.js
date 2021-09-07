@@ -43,8 +43,11 @@ earthLifeLeft(){
     return this.yearsLeft;
   }
 mercuryLifeLeft(){
-  this.lifeExpect = Math.round(this.lifeExpect*.24 -this.inputAge);
-  return this.lifeExpect;
+  this.yearsLeft = Math.round(this.lifeExpect*.24 -this.inputAge);
+  if (this.yearsLeft < 0) {
+    return Math.abs(this.yearsLeft);
+  }
+  return this.yearsLeft;
 }
 venusLifeLeft(){
   this.lifeExpect = Math.round(this.lifeExpect*.62 - this.inputAge);
