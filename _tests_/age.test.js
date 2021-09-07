@@ -2,9 +2,11 @@ import Age from "./../src/js/Age.js";
 
 describe("Age", () => {
   let age;
+  let age2;
 
   beforeEach(() => {
     age = new Age(20, 84);
+    age2 = new Age(100, 84);
   })
   test("should return age on Earth", () => {
     expect(age.earthAge()).toEqual(20);
@@ -48,11 +50,12 @@ describe("Age", () => {
     expect(age.jupiterLifeLeft()).toBe(976);
   })
   test('should return years past life expectancy', () => {
-    let age2 = new Age(100, 84);
     expect(age2.earthLifeLeft()).toEqual(16);
   })
   test('should return years past life expectancy for Mercury', () => {
-    let age2 = new Age (100, 84);
     expect(age2.mercuryLifeLeft()).toEqual(80);
+  })
+  test('should return years past life expectancy for Venus', () => {
+    expect(age2.venusLifeLeft()).toEqual(48);
   })
 })
